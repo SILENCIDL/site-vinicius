@@ -27,11 +27,12 @@
         <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
             <a href="#" onclick="app.showSection('home'); return false;" class="text-xl md:text-2xl font-serif tracking-tighter z-50 hover:text-mantiqueira-earth transition-colors">VR<span class="text-mantiqueira-earth">.</span></a>
             
-            <div class="hidden md:flex space-x-12 text-sm tracking-widest uppercase items-center">
+            <div class="hidden md:flex space-x-10 text-sm tracking-widest uppercase items-center">
                 <a href="#sobre" onclick="app.scrollToSection('sobre'); return false;" class="text-white/70 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-mantiqueira-earth hover:after:w-full after:transition-all after:duration-300">Sobre</a>
                 <a href="#portfolio" onclick="app.scrollToSection('portfolio'); return false;" class="text-white/70 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-mantiqueira-earth hover:after:w-full after:transition-all after:duration-300">Portfólio</a>
                 <a href="#experiencia" onclick="app.scrollToSection('experiencia'); return false;" class="text-white/70 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-mantiqueira-earth hover:after:w-full after:transition-all after:duration-300">Experiência</a>
-                <a href="#" onclick="app.openPrices(); return false;" class="text-white/70 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-mantiqueira-earth hover:after:w-full after:transition-all after:duration-300">Valores</a>
+                <a href="#" onclick="app.openTestimonials(); return false;" class="text-white/70 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-mantiqueira-earth hover:after:w-full after:transition-all after:duration-300">Depoimentos</a>
+                <a href="#valores" onclick="app.goToValores(); return false;" class="text-white/70 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[1px] after:bg-mantiqueira-earth hover:after:w-full after:transition-all after:duration-300">Valores</a>
                 <a href="#contato" onclick="app.scrollToSection('contato'); return false;" class="border border-white/20 px-6 py-2 hover:bg-white hover:text-black transition-all duration-300">Contato</a>
             </div>
 
@@ -45,7 +46,8 @@
         <a href="#sobre" onclick="app.scrollToSection('sobre'); app.closeMobileMenu(); return false;" class="hover:text-mantiqueira-earth transition-colors">Sobre</a>
         <a href="#portfolio" onclick="app.scrollToSection('portfolio'); app.closeMobileMenu(); return false;" class="hover:text-mantiqueira-earth transition-colors">Portfólio</a>
         <a href="#experiencia" onclick="app.scrollToSection('experiencia'); app.closeMobileMenu(); return false;" class="hover:text-mantiqueira-earth transition-colors">Experiência</a>
-        <a href="#" onclick="app.openPrices(); app.closeMobileMenu(); return false;" class="hover:text-mantiqueira-earth transition-colors">Valores</a>
+        <a href="#" onclick="app.openTestimonials(); app.closeMobileMenu(); return false;" class="hover:text-mantiqueira-earth transition-colors">Depoimentos</a>
+        <a href="#valores" onclick="app.goToValores(); app.closeMobileMenu(); return false;" class="hover:text-mantiqueira-earth transition-colors">Valores</a>
         <a href="#contato" onclick="app.scrollToSection('contato'); app.closeMobileMenu(); return false;" class="text-mantiqueira-earth">Contato</a>
     </div>
 
@@ -174,6 +176,120 @@
                 </div>
             </div>
         </section>
+
+    <section id="valores" class="py-20 md:py-32 bg-[#0d0f0d] relative border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-16 md:mb-24 reveal">
+                <span class="text-mantiqueira-earth text-[10px] md:text-xs uppercase tracking-[0.3em] block mb-4">Investimento</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-white tracking-tighter mb-6">Valores</h2>
+                <p class="text-white/50 text-sm md:text-base font-light max-w-2xl mx-auto px-4">Transparência desde o primeiro contato. Escolha a experiência que melhor se adapta à sua história.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+                <div class="border border-white/10 p-8 md:p-10 flex flex-col bg-[#0a0c0a] hover:border-mantiqueira-earth/50 transition-colors duration-500 reveal">
+                    <h3 class="font-serif text-2xl text-white mb-2">Retrato / Casal</h3>
+                    <p class="text-white/40 text-sm mb-8 font-light h-10">Ensaio intimista na natureza.</p>
+                    <div class="mb-8">
+                        <span class="text-xs text-white/50 uppercase tracking-widest block mb-1">A partir de</span>
+                        <span class="font-serif text-4xl text-mantiqueira-earth">R$ 800</span>
+                    </div>
+                    <ul class="space-y-4 text-white/60 text-sm font-light mb-10 flex-grow">
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> 2 horas de ensaio</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> 40 fotos editadas (Alta Res)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Consultoria de locação e figurino</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Galeria online privada</li>
+                    </ul>
+                    <a href="https://wa.me/5512981771665?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ensaio%20de%20Casal/Retrato." target="_blank" class="block w-full text-center border border-white/20 py-3 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all">Solicitar</a>
+                </div>
+
+                <div class="border border-mantiqueira-earth p-8 md:p-10 flex flex-col bg-mantiqueira-earth/5 relative transform md:-translate-y-4 shadow-2xl reveal">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-mantiqueira-earth text-black text-[10px] uppercase tracking-widest px-4 py-1 font-semibold">Mais Buscado</div>
+                    <h3 class="font-serif text-2xl text-white mb-2">Pre Wedding</h3>
+                    <p class="text-white/40 text-sm mb-8 font-light h-10">Aventura e romance nas montanhas.</p>
+                    <div class="mb-8">
+                        <span class="text-xs text-white/50 uppercase tracking-widest block mb-1">A partir de</span>
+                        <span class="font-serif text-4xl text-mantiqueira-earth">R$ 1.500</span>
+                    </div>
+                    <ul class="space-y-4 text-white/60 text-sm font-light mb-10 flex-grow">
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Até 4 horas de cobertura</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Mínimo de 80 fotos editadas</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Guiamento em trilhas (se necessário)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Slideshow emocional</li>
+                    </ul>
+                    <a href="https://wa.me/5512981771665?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Pre%20Wedding." target="_blank" class="block w-full text-center bg-mantiqueira-earth text-black py-3 text-xs uppercase tracking-widest hover:bg-white transition-all font-medium">Reservar Data</a>
+                </div>
+
+                <div class="border border-white/10 p-8 md:p-10 flex flex-col bg-[#0a0c0a] hover:border-mantiqueira-earth/50 transition-colors duration-500 reveal">
+                    <h3 class="font-serif text-2xl text-white mb-2">Casamento</h3>
+                    <p class="text-white/40 text-sm mb-8 font-light h-10">Cobertura documental do grande dia.</p>
+                    <div class="mb-8">
+                        <span class="text-xs text-white/50 uppercase tracking-widest block mb-1">Orçamento</span>
+                        <span class="font-serif text-3xl text-mantiqueira-earth">Personalizado</span>
+                    </div>
+                    <ul class="space-y-4 text-white/60 text-sm font-light mb-10 flex-grow">
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Cobertura completa (Making of à Festa)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Segundo fotógrafo incluso</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Mínimo de 500 fotos editadas</li>
+                        <li class="flex items-start"><i class="fas fa-check text-mantiqueira-earth mt-1 mr-3 text-[10px]"></i> Opção de álbum impresso (Fine Art)</li>
+                    </ul>
+                    <a href="https://wa.me/5512981771665?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20para%20meu%20casamento." target="_blank" class="block w-full text-center border border-white/20 py-3 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all">Conversar</a>
+                </div>
+
+            </div>
+
+            <div class="mt-10 text-center text-white/40 text-xs font-light px-4 reveal">
+                <p>* Valores sujeitos a alteração. Taxa de deslocamento pode ser aplicada para fora de São Bento do Sapucaí.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos-preview" class="py-20 md:py-32 bg-[#0a0c0a] relative border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-16 md:mb-20 reveal">
+                <span class="text-mantiqueira-earth text-[10px] md:text-xs uppercase tracking-[0.3em] block mb-4">Clientes</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-white tracking-tighter mb-6">O que dizem</h2>
+                <p class="text-white/50 text-sm md:text-base font-light max-w-xl mx-auto px-4">Histórias reais, emoções verdadeiras.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+                <div class="border border-white/8 p-8 bg-[#0d0f0d] flex flex-col reveal">
+                    <i class="fas fa-quote-left text-mantiqueira-earth/40 text-2xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">Vinícius tem um jeito único de capturar os momentos sem que ninguém perceba a câmera. Quando vimos as fotos do nosso casamento, ficamos em silêncio por alguns minutos. É mais do que fotografia — é memória viva.</p>
+                    <div>
+                        <p class="text-white text-sm font-medium tracking-wide">Ana & Rafael Moreira</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Casamento na Serra · 2024</p>
+                    </div>
+                </div>
+
+                <div class="border border-white/8 p-8 bg-[#0d0f0d] flex flex-col reveal">
+                    <i class="fas fa-quote-left text-mantiqueira-earth/40 text-2xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">O pré-wedding foi incrível. Ele nos guiou pela trilha, nos deixou completamente à vontade e as fotos saíram como cenas de filme. São as melhores fotos da minha vida — sem exagero.</p>
+                    <div>
+                        <p class="text-white text-sm font-medium tracking-wide">Pamela & Juliano Costa</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Pre Wedding · Pedra do Baú · 2024</p>
+                    </div>
+                </div>
+
+                <div class="border border-white/8 p-8 bg-[#0d0f0d] flex flex-col reveal">
+                    <i class="fas fa-quote-left text-mantiqueira-earth/40 text-2xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">Eu nunca me senti confortável na frente de câmera. O Vinícius mudou isso. Ele tem uma presença calma, dirige sem pressionar, e o resultado foi um ensaio que me deixou de queixo caído.</p>
+                    <div>
+                        <p class="text-white text-sm font-medium tracking-wide">Mariana Oliveira</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Retrato Individual · 2024</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-14 text-center reveal">
+                <button onclick="app.openTestimonials()" class="border border-white/20 px-10 py-3 text-xs uppercase tracking-widest text-white/70 hover:bg-white hover:text-black transition-all duration-300">
+                    Ver todos os depoimentos
+                </button>
+            </div>
+        </div>
+    </section>
 
     <section id="contato" class="py-20 md:py-32 bg-[#0d0f0d] relative border-t border-white/5">
         <div class="max-w-5xl mx-auto px-4 md:px-6">
@@ -411,6 +527,150 @@
             
             <div class="mt-16 text-center text-white/40 text-xs font-light px-4">
                 <p>* Valores sujeitos a alteração. Taxa de deslocamento pode ser aplicada para fora de São Bento do Sapucaí.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials-view" class="hidden-content pt-32 pb-20 md:py-40 bg-[#0a0c0a] min-h-screen">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-16 md:mb-24">
+                <button onclick="app.showSection('home')" class="text-white/50 hover:text-white text-xs uppercase tracking-widest transition-colors mb-8 flex items-center justify-center mx-auto group">
+                    <i class="fas fa-arrow-left mr-3 group-hover:-translate-x-2 transition-transform"></i> Voltar
+                </button>
+                <span class="text-mantiqueira-earth text-[10px] md:text-xs uppercase tracking-[0.3em] block mb-4">Clientes</span>
+                <h2 class="font-serif text-4xl md:text-6xl text-white tracking-tighter mb-6">O que dizem</h2>
+                <p class="text-white/50 text-sm md:text-base font-light max-w-2xl mx-auto px-4">Cada depoimento guarda uma história real. Edite este conteúdo com os textos verdadeiros dos seus clientes.</p>
+            </div>
+
+            <!-- Filtro por categoria -->
+            <div class="flex justify-center gap-4 md:gap-8 mb-16">
+                <button onclick="filterTestimonials('todos')" id="filter-todos" class="testimonial-filter active-filter text-xs uppercase tracking-widest pb-2 border-b-2 border-mantiqueira-earth text-white transition-all">Todos</button>
+                <button onclick="filterTestimonials('casamento')" id="filter-casamento" class="testimonial-filter text-xs uppercase tracking-widest pb-2 border-b-2 border-transparent text-white/50 hover:text-white transition-all">Casamentos</button>
+                <button onclick="filterTestimonials('retrato')" id="filter-retrato" class="testimonial-filter text-xs uppercase tracking-widest pb-2 border-b-2 border-transparent text-white/50 hover:text-white transition-all">Retratos</button>
+            </div>
+
+            <!-- Grid de depoimentos -->
+            <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+                <!-- DEPOIMENTO 1 — Casamento -->
+                <div class="testimonial-card border border-white/10 p-8 md:p-10 bg-[#0d0f0d] flex flex-col hover:border-mantiqueira-earth/30 transition-colors duration-500" data-category="casamento">
+                    <div class="flex mb-6">
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs"></i>
+                    </div>
+                    <i class="fas fa-quote-left text-mantiqueira-earth/30 text-3xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">
+                        Vinícius tem um jeito único de capturar os momentos sem que ninguém perceba a câmera. Quando vimos as fotos do nosso casamento, ficamos em silêncio por alguns minutos. É mais do que fotografia — é memória viva.
+                    </p>
+                    <div class="border-t border-white/10 pt-6">
+                        <p class="text-white text-sm font-medium tracking-wide">Ana & Rafael Moreira</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Casamento na Serra · 2024</p>
+                    </div>
+                </div>
+
+                <!-- DEPOIMENTO 2 — Casamento -->
+                <div class="testimonial-card border border-white/10 p-8 md:p-10 bg-[#0d0f0d] flex flex-col hover:border-mantiqueira-earth/30 transition-colors duration-500" data-category="casamento">
+                    <div class="flex mb-6">
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs"></i>
+                    </div>
+                    <i class="fas fa-quote-left text-mantiqueira-earth/30 text-3xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">
+                        Ele conhece cada ângulo da serra, cada luz do dia. O nosso álbum é algo que mostramos com orgulho pra todo mundo. A decisão de escolher o Vinícius foi a melhor que tomamos em todo o planejamento do casamento.
+                    </p>
+                    <div class="border-t border-white/10 pt-6">
+                        <p class="text-white text-sm font-medium tracking-wide">Bianca & Donizete Fernandes</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Casamento em São Bento · 2023</p>
+                    </div>
+                </div>
+
+                <!-- DEPOIMENTO 3 — Pre Wedding / Casamento -->
+                <div class="testimonial-card border border-white/10 p-8 md:p-10 bg-[#0d0f0d] flex flex-col hover:border-mantiqueira-earth/30 transition-colors duration-500" data-category="casamento">
+                    <div class="flex mb-6">
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs"></i>
+                    </div>
+                    <i class="fas fa-quote-left text-mantiqueira-earth/30 text-3xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">
+                        O pré-wedding foi incrível. Ele nos guiou pela trilha, nos deixou completamente à vontade e as fotos saíram como cenas de filme. São as melhores fotos da minha vida — sem exagero nenhum.
+                    </p>
+                    <div class="border-t border-white/10 pt-6">
+                        <p class="text-white text-sm font-medium tracking-wide">Pamela & Juliano Costa</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Pre Wedding · Pedra do Baú · 2024</p>
+                    </div>
+                </div>
+
+                <!-- DEPOIMENTO 4 — Retrato -->
+                <div class="testimonial-card border border-white/10 p-8 md:p-10 bg-[#0d0f0d] flex flex-col hover:border-mantiqueira-earth/30 transition-colors duration-500" data-category="retrato">
+                    <div class="flex mb-6">
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs"></i>
+                    </div>
+                    <i class="fas fa-quote-left text-mantiqueira-earth/30 text-3xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">
+                        Eu nunca me senti confortável na frente de câmera. O Vinícius mudou isso. Ele tem uma presença calma, dirige sem pressionar, e o resultado foi um ensaio que me deixou de queixo caído.
+                    </p>
+                    <div class="border-t border-white/10 pt-6">
+                        <p class="text-white text-sm font-medium tracking-wide">Mariana Oliveira</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Retrato Individual · 2024</p>
+                    </div>
+                </div>
+
+                <!-- DEPOIMENTO 5 — Ensaio de Casal / Retrato -->
+                <div class="testimonial-card border border-white/10 p-8 md:p-10 bg-[#0d0f0d] flex flex-col hover:border-mantiqueira-earth/30 transition-colors duration-500" data-category="retrato">
+                    <div class="flex mb-6">
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs"></i>
+                    </div>
+                    <i class="fas fa-quote-left text-mantiqueira-earth/30 text-3xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">
+                        Trouxemos nossa história pra Serra da Mantiqueira e o Vinícius transformou isso em imagens que a gente vai guardar pra sempre. Um fotógrafo que entende de luz, de emoção e de gente.
+                    </p>
+                    <div class="border-t border-white/10 pt-6">
+                        <p class="text-white text-sm font-medium tracking-wide">Camila & Fernando Souza</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Ensaio de Casal · Serra · 2024</p>
+                    </div>
+                </div>
+
+                <!-- DEPOIMENTO 6 — Retrato -->
+                <div class="testimonial-card border border-white/10 p-8 md:p-10 bg-[#0d0f0d] flex flex-col hover:border-mantiqueira-earth/30 transition-colors duration-500" data-category="retrato">
+                    <div class="flex mb-6">
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs mr-1"></i>
+                        <i class="fas fa-star text-mantiqueira-earth text-xs"></i>
+                    </div>
+                    <i class="fas fa-quote-left text-mantiqueira-earth/30 text-3xl mb-6"></i>
+                    <p class="text-white/70 text-sm font-light leading-relaxed italic flex-grow mb-8">
+                        Profissional impecável, pontual e com um olhar artístico raro. As fotos têm uma atmosfera que nunca havia visto em outro trabalho. Recomendo sem hesitar para qualquer pessoa que queira fotos com alma.
+                    </p>
+                    <div class="border-t border-white/10 pt-6">
+                        <p class="text-white text-sm font-medium tracking-wide">Luciana Prado</p>
+                        <p class="text-mantiqueira-earth text-[10px] uppercase tracking-widest mt-1">Retrato · São Bento · 2025</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-20 text-center border-t border-white/5 pt-16">
+                <p class="text-white/30 text-xs uppercase tracking-widest mb-4">Quer compartilhar sua experiência?</p>
+                <a href="https://wa.me/5512981771665?text=Olá%20Vinícius!%20Quero%20deixar%20meu%20depoimento%20sobre%20o%20nosso%20ensaio." target="_blank" class="inline-block border border-white/20 px-8 py-3 text-xs uppercase tracking-widest text-white/70 hover:bg-white hover:text-black transition-all duration-300">Enviar depoimento</a>
             </div>
         </div>
     </div>

@@ -274,6 +274,15 @@ const app = {
   },
 
   openPrices() { this.showSection('prices-view'); },
+
+  goToValores() {
+    this.showSection('home');
+    setTimeout(() => {
+      const el = document.getElementById('valores');
+      if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+    }, 350);
+  },
+
   openTestimonials() { this.showSection('testimonials-view'); },
   openBlog() { this.showSection('blog-view'); },
 
@@ -522,6 +531,25 @@ function initRotatingPhrases() {
     if (elF) elF.textContent = rand(FRASES_FOOTER);
     if (elC) elC.textContent = rand(FRASES_CONTATO);
   } catch(e) { /* silencioso */ }
+}
+
+function filterTestimonials(category) {
+  const cards = document.querySelectorAll('.testimonial-card');
+  const btns  = document.querySelectorAll('.testimonial-filter');
+
+  btns.forEach(btn => {
+    const isActive = btn.id === `filter-${category}`;
+    btn.classList.toggle('active-filter', isActive);
+    btn.classList.toggle('border-mantiqueira-earth', isActive);
+    btn.classList.toggle('text-white', isActive);
+    btn.classList.toggle('border-transparent', !isActive);
+    btn.classList.toggle('text-white/50', !isActive);
+  });
+
+  cards.forEach(card => {
+    const match = category === 'todos' || card.dataset.category === category;
+    card.style.display = match ? '' : 'none';
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => app.init());
