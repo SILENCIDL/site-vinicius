@@ -2,6 +2,8 @@
    MAIN.JS — Vinícius Rafael Fotografia (v3.0 Responsivo)
    ============================================================ */
 
+import Chart from 'chart.js/auto'
+
 const VIEWS = ['main-view', 'wedding-selector', 'gallery-view', 'olhar-view', 'street-view', 'prices-view', 'testimonials-view', 'blog-view'];
 
 const app = {
