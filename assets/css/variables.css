@@ -1,0 +1,40 @@
+/* ============================================================
+   VARIABLES.CSS — Design Tokens (Vinícius Rafael Fotografia)
+   ============================================================ */
+
+:root {
+  /* ── Paleta Mantiqueira ── */
+  --color-bg:          #0a0c0a;
+  --color-bg-alt:      #111311;
+  --color-surface:     #1a1a1a;
+  --color-surface-2:   #2a2a2a;
+  --color-earth:       #c5a373;
+  --color-earth-dim:   rgba(197, 163, 115, 0.2);
+  --color-rock:        #2c2f2e;
+  --color-green:       #1a241a;
+  --color-light:       #fdfcf9;
+
+  /* ── Texto ── */
+  --color-text:        #fdfcf9;
+  --color-text-muted:  rgba(253, 252, 249, 0.6);
+
+  /* ── Tipografia ── */
+  --font-sans:  'Montserrat', sans-serif;
+  --font-serif: 'Lora', serif;
+
+  /* ── Layout ── */
+  --nav-height: 70px;
+
+  /* ── Transições ── */
+  --ease-in-out:      cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast:    150ms;
+  --duration-normal:  300ms;
+  --duration-slow:    500ms;
+  --duration-gallery: 700ms;
+
+  /* ── Z-index ── */
+  --z-base:    0;
+  --z-gallery: 10;
+  --z-overlay: 20;
+  --z-sticky:  50;
+}
